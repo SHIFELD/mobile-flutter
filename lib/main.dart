@@ -23,12 +23,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           elevation: 0,
-          color: Color(0xFF212123),
+          color: Color(0xFF002254),
           titleTextStyle: TextStyle(
             color: Colors.white,
           ),
         ),
-        scaffoldBackgroundColor: const Color(0xff212123),
+        scaffoldBackgroundColor: const Color(0xff002254),
       ),
       initialRoute: '/',
       getPages: [
