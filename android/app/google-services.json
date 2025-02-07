@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1005566762108",
+    "project_id": "shifeld",
+    "storage_bucket": "shifeld.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005566762108:android:5f340ebeb53c83b1ec3df9",
+        "android_client_info": {
+          "package_name": "com.ydmins.shifeld_mobile_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIXMpdhoyztwVUe0qS8aNDKIMehHDDQSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
