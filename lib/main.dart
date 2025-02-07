@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:shifeld_mobile_flutter/firebase_options.dart';
 import 'package:shifeld_mobile_flutter/src/app.dart';
 
+int count = 0;
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
