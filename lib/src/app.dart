@@ -1,5 +1,7 @@
 import 'package:shifeld_mobile_flutter/main.dart';
 import 'package:flutter/material.dart';
+import 'package:shifeld_mobile_flutter/src/init/page/init_start_page.dart';
+import 'package:shifeld_mobile_flutter/src/splash/page/splash_page.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -9,23 +11,16 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
+  late bool isInitStarted;
+
+  @override
+  void initState() {
+    super.initState();
+    isInitStarted = prefs.getBool('isInitStarted') ?? true;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          count.toString(),
-          style: const TextStyle(
-            fontSize: 80,
-            color: Colors.white,
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: () {
-        setState(() {
-          count++;
-        });
-      }),
-    );
+    return isInitStarted ? const InitStartPage() : const SplashPage();
   }
 }
